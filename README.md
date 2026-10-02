@@ -1,4 +1,4 @@
-# Comedor IPF - Sistema de Pedidos 🍔
+# Comedor IPF - Sistema de Pedidos
 
 Aplicación móvil desarrollada con **React Native** y **Expo Router (SDK 57)** para la gestión de pedidos y atención en la cocina del Instituto Politécnico Formosa.
 
@@ -86,12 +86,12 @@ export const unstable_settings = {
 
 ## 4. Esquema de Navegación: los tres niveles
 
-| Nivel | Navigator | Dónde | Por qué |
-|---|---|---|---|
-| 1 | `Stack` | `src/app/_layout.tsx` | Pila raíz que aísla los flujos globales (tabs, modales de `confirmar`/`login`, rutas dinámicas) y aplica la protección de rutas. |
-| 2 | `Tabs` | `src/app/(tabs)/_layout.tsx` | Tres pestañas principales (Inicio, Menú, Carrito) con `tabBarActiveTintColor: #007AFF`. |
-| 3 | `Stack` anidado | `(tabs)/menu/_layout.tsx` y `(tabs)/carrito/_layout.tsx` | Mantiene visible la barra de tabs al profundizar dentro de un flujo. |
-| — | `Drawer` | `src/app/cocina/_layout.tsx` | Zona restringida de cocina con dos vistas: Cola de Pedidos y Historial. Requiere `GestureHandlerRootView` en la raíz. |
+| Nivel | Navigator       | Dónde                                                    | Por qué                                                                                                                          |
+| ----- | --------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | `Stack`         | `src/app/_layout.tsx`                                    | Pila raíz que aísla los flujos globales (tabs, modales de `confirmar`/`login`, rutas dinámicas) y aplica la protección de rutas. |
+| 2     | `Tabs`          | `src/app/(tabs)/_layout.tsx`                             | Tres pestañas principales (Inicio, Menú, Carrito) con `tabBarActiveTintColor: #007AFF`.                                          |
+| 3     | `Stack` anidado | `(tabs)/menu/_layout.tsx` y `(tabs)/carrito/_layout.tsx` | Mantiene visible la barra de tabs al profundizar dentro de un flujo.                                                             |
+| —     | `Drawer`        | `src/app/cocina/_layout.tsx`                             | Zona restringida de cocina con dos vistas: Cola de Pedidos y Historial. Requiere `GestureHandlerRootView` en la raíz.            |
 
 **Aislamiento de estado:** cada anidamiento conserva su propio historial. El usuario puede entrar y salir del detalle de un plato sin perder la lista de categorías, y la pestaña Carrito conserva su scroll y su pila interna al cambiar de tab.
 
@@ -99,11 +99,11 @@ export const unstable_settings = {
 
 `src/context/GlobalContext.tsx` exporta `ComedorProvider` (que envuelve toda la app en el layout raíz) y el hook `useComedor()`.
 
-| Estructura | Tipo | Implementación | Uso en la app |
-|---|---|---|---|
-| `pilaCarrito` | **Pila — LIFO** | `src/estructuras/Pila.ts` | El carrito se apila; `deshacerUltimo()` hace `pop()` (deshacer el último plato agregado). |
-| `colaPedidos` | **Cola — FIFO** | `src/estructuras/Cola.ts` | Los pedidos se encolan al confirmar; la cocina hace `desencolar()` → atiende siempre el más viejo. |
-| `pilaAtendidos` | **Pila — LIFO** | `src/estructuras/Pila.ts` | Historial de atendidos; `atendidos.tsx` lo invierte para mostrar lo más reciente primero. |
+| Estructura      | Tipo            | Implementación            | Uso en la app                                                                                      |
+| --------------- | --------------- | ------------------------- | -------------------------------------------------------------------------------------------------- |
+| `pilaCarrito`   | **Pila — LIFO** | `src/estructuras/Pila.ts` | El carrito se apila; `deshacerUltimo()` hace `pop()` (deshacer el último plato agregado).          |
+| `colaPedidos`   | **Cola — FIFO** | `src/estructuras/Cola.ts` | Los pedidos se encolan al confirmar; la cocina hace `desencolar()` → atiende siempre el más viejo. |
+| `pilaAtendidos` | **Pila — LIFO** | `src/estructuras/Pila.ts` | Historial de atendidos; `atendidos.tsx` lo invierte para mostrar lo más reciente primero.          |
 
 **Flujo del pedido:**
 
@@ -132,7 +132,7 @@ Escaneá el QR con Expo Go o abrí la URL `exp://<tu-ip>:8081` en el navegador d
 **Comandos útiles:**
 
 ```bash
-npx expo start        # desarrollo
-npx expo start --web  # probar en navegador
-npx tsc --noEmit      # chequeo de tipos
+pnpm start        # desarrollo
+pnpm start --web  # probar en navegador
+pnpm tsc --noEmit      # chequeo de tipos
 ```
