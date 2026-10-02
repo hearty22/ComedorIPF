@@ -42,8 +42,18 @@ export default function DetallePlato() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  titulo: { fontSize: 24, fontWeight: "bold" },
-  precio: { fontSize: 20, marginVertical: 15, color: "green" },
-  error: { color: "red", fontSize: 18 },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 8,
+  },
+  precio: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#10B981",
+    marginVertical: 16,
+  },
+  error: { color: "#EF4444", fontSize: 16, fontWeight: "700" },
 });

@@ -27,8 +27,28 @@ export default function AtendidosPantalla() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  item: { padding: 15, borderBottomWidth: 1, borderColor: "#ccc" },
-  turno: { fontSize: 18, fontWeight: "bold", color: "green" },
-  vacio: { textAlign: "center", marginTop: 20, color: "#666" },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  item: {
+    padding: 16,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 12,
+    marginBottom: 8,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
+  },
+  turno: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#10B981",
+    marginBottom: 8,
+  },
+  vacio: {
+    textAlign: "center",
+    marginTop: 24,
+    fontSize: 16,
+    color: "#6B7280",
+  },
 });

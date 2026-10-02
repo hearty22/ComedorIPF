@@ -38,18 +38,28 @@ export default function LoginPantalla() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, justifyContent: "center" },
+  container: {
+    flex: 1,
+    padding: 24,
+    justifyContent: "center",
+    backgroundColor: "#F9FAFB",
+  },
   titulo: {
     fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 24,
     textAlign: "center",
   },
   input: {
     borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    marginBottom: 15,
-    borderRadius: 5,
+    borderColor: "#E5E7EB",
+    backgroundColor: "#FFFFFF",
+    padding: 16,
+    marginBottom: 16,
+    borderRadius: 8,
+    fontSize: 16,
+    color: "#1F2937",
+    minHeight: 48,
   },
 });

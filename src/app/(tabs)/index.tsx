@@ -25,14 +25,28 @@ export default function Inicio() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: "#fff" },
-  titulo: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
-  grid: { gap: 15 },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 24,
+  },
+  grid: { gap: 16 },
   card: {
-    padding: 20,
-    backgroundColor: "#f0f0f0",
-    borderRadius: 8,
+    minHeight: 48,
+    padding: 16,
+    justifyContent: "center",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 12,
     fontSize: 18,
     textAlign: "center",
+    color: "#1F2937",
+    overflow: "hidden",
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
   },
 });

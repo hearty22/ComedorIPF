@@ -23,10 +23,17 @@ export function DondeEstoy() {
 
 const styles = StyleSheet.create({
   caja: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#f0f0f0",
-    borderRadius: 8,
+    marginTop: 24,
+    padding: 16,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
   },
-  titulo: { fontWeight: "bold", marginBottom: 5 },
+  titulo: {
+    fontWeight: "700",
+    fontSize: 16,
+    color: "#1F2937",
+    marginBottom: 8,
+  },
 });

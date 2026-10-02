@@ -16,7 +16,7 @@ export default function CarritoPantalla() {
       <View style={styles.botones}>
         <Button
           title="Deshacer último"
-          color="red"
+          color="#EF4444"
           onPress={deshacerUltimo}
           disabled={carrito.length === 0}
         />
@@ -48,19 +48,32 @@ export default function CarritoPantalla() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  titulo: { fontSize: 22, fontWeight: "bold", marginBottom: 10 },
-  botones: { marginBottom: 15 },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 16,
+  },
+  botones: { marginBottom: 16 },
   item: {
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingVertical: 10,
-    borderBottomWidth: 1,
+    backgroundColor: "#FFFFFF",
+    padding: 16,
+    borderRadius: 12,
+    marginBottom: 8,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
   },
   total: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginVertical: 20,
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginVertical: 24,
     textAlign: "right",
   },
 });

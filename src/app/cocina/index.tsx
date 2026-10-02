@@ -22,7 +22,7 @@ export default function CocinaCola() {
           <Button
             title="Atender Siguiente"
             onPress={atenderSiguiente}
-            color="green"
+            color="#10B981"
           />
         </View>
       ) : (
@@ -33,22 +33,40 @@ export default function CocinaCola() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  titulo: { fontSize: 24, fontWeight: "bold" },
-  subtitulo: { fontSize: 16, marginBottom: 20, color: "#666" },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+  },
+  subtitulo: { fontSize: 16, marginBottom: 24, color: "#6B7280" },
   tarjeta: {
-    backgroundColor: "#fff",
-    padding: 20,
-    borderRadius: 10,
-    elevation: 3,
+    backgroundColor: "#FFFFFF",
+    padding: 24,
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
   },
   turno: {
-    fontSize: 28,
-    fontWeight: "bold",
+    fontSize: 24,
+    fontWeight: "700",
     color: "#007AFF",
-    marginBottom: 10,
+    marginBottom: 8,
   },
-  nota: { fontStyle: "italic", marginBottom: 10 },
-  platos: { marginBottom: 20 },
-  vacio: { fontSize: 18, color: "#999", textAlign: "center", marginTop: 50 },
+  nota: {
+    fontStyle: "italic",
+    fontSize: 16,
+    color: "#6B7280",
+    marginBottom: 8,
+  },
+  platos: { fontSize: 16, color: "#1F2937", marginBottom: 16 },
+  vacio: {
+    fontSize: 16,
+    color: "#6B7280",
+    textAlign: "center",
+    marginTop: 32,
+  },
 });

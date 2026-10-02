@@ -46,12 +46,22 @@ export default function CategoriaPantalla() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16 },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
   item: {
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
+    minHeight: 48,
+    padding: 16,
+    justifyContent: "center",
+    backgroundColor: "#FFFFFF",
+    marginBottom: 8,
+    borderRadius: 12,
     fontSize: 16,
+    color: "#1F2937",
+    overflow: "hidden",
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
   },
-  error: { color: "red", fontSize: 18, fontWeight: "bold" },
+  error: { color: "#EF4444", fontSize: 16, fontWeight: "700" },
 });

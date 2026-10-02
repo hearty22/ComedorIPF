@@ -17,14 +17,23 @@ export default function CarritoNota() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  titulo: { fontSize: 20, fontWeight: "bold", marginBottom: 15 },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 16,
+  },
   input: {
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#E5E7EB",
+    backgroundColor: "#FFFFFF",
     borderRadius: 8,
-    padding: 10,
+    padding: 16,
+    fontSize: 16,
+    color: "#1F2937",
+    minHeight: 120,
     textAlignVertical: "top",
-    marginBottom: 20,
+    marginBottom: 24,
   },
 });

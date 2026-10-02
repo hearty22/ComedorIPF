@@ -31,10 +31,16 @@ export default function ConfirmarPantalla() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: 24,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#F9FAFB",
   },
-  titulo: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
-  boton: { marginTop: 30, width: "100%" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 24,
+  },
+  boton: { marginTop: 32, width: "100%" },
 });

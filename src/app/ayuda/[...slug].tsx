@@ -16,7 +16,12 @@ export default function AyudaArticulo() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  titulo: { fontSize: 22, fontWeight: "bold" },
-  ruta: { fontSize: 16, marginTop: 10, color: "#555" },
+  container: { flex: 1, padding: 24, backgroundColor: "#F9FAFB" },
+  titulo: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1F2937",
+    marginBottom: 8,
+  },
+  ruta: { fontSize: 16, marginTop: 8, color: "#6B7280" },
 });
